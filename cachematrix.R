@@ -3,8 +3,7 @@
 ## functions do
 
 
-## Write a short comment describing this function
-
+## makeCacheMatrix creates new type of the matrix object which can be cached
 makeCacheMatrix <- function(x = matrix()) {
         ix <- NULL
         set <- function (y){
@@ -19,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolev function is used to inviole solve with caching
+## its argument is a speciall object created by makeCacheMatrix
 
 cacheSolve <- function(x) {
         ## Return a matrix that is the inverse of 'x'
